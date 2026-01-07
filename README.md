@@ -1,36 +1,35 @@
 # Network Traffic Feature Engineering
 
-This project implements a reproducible pipeline for extracting
-packet-level and flow-level features from network traffic PCAP files.
-The extracted features are designed for machine learning–based network
-traffic analysis and anomaly detection.
+A reproducible pipeline to extract **packet-level and flow-level features** from network traffic PCAP files.  
+Designed for **machine learning–based network traffic analysis and anomaly detection**.
 
 ---
 
-## Project Scope
+## 🔹 Project Scope
 
-- Convert raw PCAP files into packet-level and flow-level representations
-- Extract statistical flow features:
+- Convert raw PCAP files into **packet-level** and **flow-level** representations
+- Aggregate flows using **5-tuple (src_ip, dst_ip, src_port, dst_port, protocol)**
+- Extract **statistical features** for each flow:
   - Number of packets
   - Total bytes
   - Flow duration
   - Average packet size
   - Variance of packet sizes
   - Entropy of packet sizes
-- Produce ML-ready datasets for anomaly detection and traffic analysis
+- Produce **ML-ready datasets** for anomaly detection and traffic analysis
 
 ---
 
-## Tools & Technologies
+## 🛠️ Tools & Technologies
 
 - Python 3.13+
-- [Scapy](https://scapy.net/) – packet processing
-- [Pandas](https://pandas.pydata.org/) – data manipulation
-- [NumPy](https://numpy.org/) – numerical computation
+- [Scapy](https://scapy.net/) — packet processing
+- [Pandas](https://pandas.pydata.org/) — data manipulation
+- [NumPy](https://numpy.org/) — numerical computation
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 network-traffic-feature-engineering/
